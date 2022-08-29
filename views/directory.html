@@ -1,0 +1,19 @@
+<div class="content">
+  <button ng-click="order = 'name'">Sort by name</button>
+  <button ng-click="order = 'age'">Sort by age</button>
+  <input type="text" ng-model="search" placeholder="Search..." />
+  <ul>
+    <li
+      ng-repeat="geek in geeks | orderBy: order | filter: search"
+      ng-show="geek.available"
+    >
+      {{geek.name}} - {{geek.age}}
+      <div class="remove" ng-click="removeGeek(geek)">x</div>
+    </li>
+  </ul>
+  <form ng-submit="addGeek()">
+    <input type="text" placeholder="Name" ng-model="newName" />
+    <input type="text" placeholder="Age" ng-model="newAge" />
+    <input type="submit" value="Add new geek" />
+  </form>
+</div>

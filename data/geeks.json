@@ -1,0 +1,7 @@
+[
+  { "name": "Alan", "age": 34, "available": true },
+  { "name": "Don", "age": 83, "available": true },
+  { "name": "Barbara", "age": 78, "available": true },
+  { "name": "Kurt", "age": 68, "available": true },
+  { "name": "Ada", "age": 130, "available": true }
+]
